@@ -11,3 +11,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.WindowCompat.enableEdgeToEdge
 import com.example.pertemuan3.ui.theme.Pertemuan3Theme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            Pertemuan3Theme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    TataletakBoxColumnRow(
+                        modifier = Modifier.padding(paddingValues = innerPadding)
+                    )
+                }
+            }
+        }
+    }
+}
