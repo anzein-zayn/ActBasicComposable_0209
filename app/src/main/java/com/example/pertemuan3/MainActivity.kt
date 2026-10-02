@@ -24,6 +24,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Pertemuan3Theme {
+                var lanjut by remember { mutableStateOf(value = false) }
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     TataletakBoxColumnRow(
                         modifier = Modifier.padding(paddingValues = innerPadding)
