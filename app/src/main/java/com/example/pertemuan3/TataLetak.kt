@@ -115,7 +115,7 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                         .fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
-                    Text(text = "Haloww Selamat Yaaa",
+                    Text(text = "Halo",
                         fontSize = 32.sp,
                         color  = Color.Black,
                         fontWeight = FontWeight.Bold,)
