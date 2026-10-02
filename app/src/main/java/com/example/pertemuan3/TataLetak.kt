@@ -145,14 +145,6 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
         ){
             Image(painter = gambar,
                 contentDescription = null,
-                contentScale = ContentScale.Fit)
-            Text(text = "TESSS",
-                fontSize = 50.sp,
-                color = Color.Red,
-                fontWeight = FontWeight.Bold,
-                fontFamily = FontFamily.Cursive,
-                modifier = Modifier.align(
-                    alignment = Alignment.BottomEnd)
             )
         }
     }
