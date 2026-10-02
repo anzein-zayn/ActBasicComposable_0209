@@ -117,7 +117,8 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 ) {
                     Text(text = "Haloww Selamat Yaaa",
                         fontSize = 32.sp,
-                        color  = Color.Black,)
+                        color  = Color.Black,
+                        fontWeight = FontWeight.Bold,)
 
                 }
                 Row(
