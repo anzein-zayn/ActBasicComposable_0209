@@ -29,6 +29,11 @@ class MainActivity : ComponentActivity() {
                     TataletakBoxColumnRow(
                         modifier = Modifier.padding(paddingValues = innerPadding)
                     )
+
+                    if (lanjut) {
+                        HalamanLoginUMY(
+                            modifier = Modifier.padding(paddingValues = innerPadding)
+                        )
                 }
             }
         }
