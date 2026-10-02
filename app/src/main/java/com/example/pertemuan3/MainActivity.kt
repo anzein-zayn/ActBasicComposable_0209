@@ -26,14 +26,24 @@ class MainActivity : ComponentActivity() {
             Pertemuan3Theme {
                 var lanjut by remember { mutableStateOf(value = false) }
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TataletakBoxColumnRow(
-                        modifier = Modifier.padding(paddingValues = innerPadding)
-                    )
 
                     if (lanjut) {
                         HalamanLoginUMY(
                             modifier = Modifier.padding(paddingValues = innerPadding)
                         )
+                    } else {
+                        TataletakBoxColumnRow(
+                            modifier = Modifier.padding(paddingValues = innerPadding)
+                        )
+                        Button(
+                        onClick = { lanjut = true },
+                        modifier = Modifier
+                            .padding(paddingValues = innerPadding)
+                            .padding(top = 20.dp),
+
+                        ) { Text("Lanjut Ke Login") }
+
+                    }
                 }
             }
         }
